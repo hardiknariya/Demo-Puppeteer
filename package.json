@@ -1,0 +1,23 @@
+{
+  "name": "demo-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardiknariya/Demo-Puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardiknariya/Demo-Puppeteer/issues"
+  },
+  "homepage": "https://github.com/hardiknariya/Demo-Puppeteer#readme",
+  "dependencies": {
+    "puppeteer": "^19.7.3"
+  }
+}
