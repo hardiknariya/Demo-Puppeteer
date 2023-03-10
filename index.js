@@ -41,7 +41,7 @@ const fetchData = async () => {
         parseFloat(allOverReview).toFixed(1)
       );
       console.info(
-        "\n\n==============================\Total Review---",
+        "\n\n==============================\nTotal Review---",
         googleTotalReview,
         "\nAllover Review --",
         googleAllOverReview,
