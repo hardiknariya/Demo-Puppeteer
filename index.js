@@ -14,19 +14,24 @@ console.info(
 
 const fetchData = async () => {
   try {
-    console.log("\n trying to launch puppeteer ", new Date().toISOString());
+    console.log(
+      "\n" + new Date().toISOString() + "  trying to launch puppeteer"
+    );
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      headless: true
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      headless: true,
     });
     console.log(
-      "\n puppeteer launched sucessfully and brouser open new page",
-      new Date().toISOString()
+      "\n" +
+        new Date().toISOString() +
+        "  puppeteer launched sucessfully and brouser open new page"
     );
     const page = await browser.newPage();
-    console.log("\n brouser open new page and go to url", new Date().toISOString());
+    console.log(
+      "\n" + new Date().toISOString() + "  brouser open new page and go to url"
+    );
     await page.goto(`${url}`);
-    console.log("\n page open sucessfully", new Date().toISOString());
+    console.log("\n" + new Date().toISOString() + "  page open sucessfully");
 
     let total = await page.waitForSelector(".P2NYOe.GFm7je.sSHqwe");
     let allOver = await page.waitForSelector(".FBsWCd");
