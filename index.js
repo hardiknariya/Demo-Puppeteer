@@ -15,7 +15,10 @@ console.info(
 const fetchData = async () => {
   try {
     console.log("\n trying to launch puppeteer ", new Date().toISOString());
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      headless: true
+    });
     console.log(
       "\n puppeteer launched sucessfully and brouser open new page",
       new Date().toISOString()
